@@ -15,7 +15,7 @@
 
            
             padding: 10px;
-            padding-right: 170px;
+            
             border-radius: 16px;
            
 
@@ -23,76 +23,92 @@
       </style>
 </head>
 
-<body style="margin: 20px; display: flex; flex-direction: column; flex-wrap: wrap; gap: 20px;">
-    <div style="display: flex; flex-direction: row; justify-content: flex-start; background-color: black; border-radius: 20px; flex-wrap: wrap;">
+<body style="margin: 0px; display: flex; flex-direction: column; flex-wrap: wrap; gap: 20px;">
+    <div style="display: flex; flex-direction: row; justify-content: flex-start; background-color: #2A2C2E; border-radius: 20px; flex-wrap: wrap; margin: 20px; margin-bottom: 0px; ">
         <div style="padding: 20px;"><img src="logo.png" alt="logo"></div>
     </div>
 
-    <div style="display: flex; flex-direction: column; gap: 20px;">
-        <form action="get" action="">
-        <div>REGISTER YOUR BOOK</div>
-        <div>Book Details---------------------------------------------------------------</div>
+    <div style="display: flex; flex-direction: column;  background-color: #2A2C2E; padding: 20px; border-radius: 20px; margin: 20px; margin-top: 10px; flex-wrap: wrap;"  >
+        <form style="display: flex; flex-direction: column; gap: 5px; flex-wrap: wrap;" method="get" action="https:httpbin.org/get">
+        <div style="color: white;">REGISTER YOUR BOOK</div>
+        <div style="color: white;">Book Details---------------------------------------------------------------</div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;" >
-            <div style="flex-basis: 100px;">Title</div>
-            <div><input class="input" type="text" name="title"></div> 
+            <label for="title" style="flex-basis: 70px; color: white; ">Title</label>
+            <input class="input" style="padding-right: 10px; flex-basis: 400px;" type="text" id="title" name="title"> 
         </div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <div style="flex-basis: 100px;">Genre</div>
-            <div><input class="input" type="text" name="title"></div> 
+            <label for="genre" style="flex-basis: 70px; color: white;">Genre</label> 
+            <input class="input" style="padding-right: 10px; flex-basis: 400px;" type="text" name="genre" id="genre">
         </div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <div style="flex-basis: 100px;">Author</div>
-            <div><input class="input" type="text" name="title"></div> 
+            <label  for="author" style="flex-basis: 70px ;color: white;">Author</label> 
+            <input class="input" style="padding-right: 10px; flex-basis: 400px;" type="text" name="author" id="author">
         </div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <div style="flex-basis: 100px;">Publisher</div>
-            <div><input class="input" type="text" name="title"></div> 
+            <label for="publisher" style="flex-basis: 70px;color: white;">Publisher</label>
+            <input class="input" style="padding-right: 10px; flex-basis: 400px;" type="text" name="publisher" id="publisher">
         </div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <div style="flex-basis: 100px;">Year Publisher</div>
-            <div><input class="input" type="number" name="title"></div> 
+            <label for="year" style="flex-basis: 70px;color: white;">Year Publisher</label>
+            <input class="input" style="padding-right: 10px; flex-basis: 400px;" type="number" name="year" id="year">
         </div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <div style="flex-basis: 100px;">Availability</div>
+            <div style="flex-basis: 70px;color: white;">Availability</div>
             <div><input class="input" type="radio" name="title"></div> 
-            <label for="html">Online</label>
+            <label for="html" style="color: white;">Online</label>
             <div><input class="input" type="radio" name="title"></div> 
-            <label for="html">In store</label>
+            <label for="html" style="color: white;">In store</label>
             <div><input class="input" type="radio" name="title"></div> 
-            <label for="html">Online & In store</label>
+            <label for="html" style="color: white;">Online & In store</label>
         </div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <div style="flex-basis: 100px;">Pages</div>
-            <div><input class="input" type="text" name="title"></div> 
+            <label for="pages" style="flex-basis: 70px;color: white;">Pages</label>
+            <input class="input"style="padding-right: 10px; flex-basis: 400px;" type="text" name="pages" id="pages"> 
         </div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <div style="flex-basis: 100px;">Language</div>
-            <div><input class="input" type="text" name="title"></div> 
+            <label for=" language" style="flex-basis: 70px;color: white;">Language</label>
+            <input class="input" style="padding-right: 10px; flex-basis: 400px;" type="text" name="language" id="language">
         </div>
-        <div>Register Details---------------------------------------------------------------</div>
+        <div style="color: white;">Register Details---------------------------------------------------------------</div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <div style="flex-basis: 100px;">Name</div>
-            <div><input class="input" type="text" name="title"></div> 
+            <label for="name" style="flex-basis: 70px;color: white;">Name</label>
+            <input class="input" style="padding-right: 10px; flex-basis: 400px;" type="text" name="name" id="name">
         </div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <div style="flex-basis: 100px;">Email</div>
-            <div><input class="input" type="email" name="title"></div> 
+            <label for="email" style="flex-basis: 70px;color: white;">Email</label>
+            <input class="input" style="padding-right: 10px; flex-basis: 400px;" type="email" name="email" id="email">
         </div>
         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
             
             <div><input class="input" type="checkbox" name="title"></div> 
-            <div>I hereby agree to follow all rules and confirmed that all details are accurate</div>
+            <div style="color: white;">I hereby agree to follow all rules and confirmed that all details are accurate</div>
         </div>
-        <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap;">
-            <div><input class="input" type="Submit" name="title"></div> 
+        <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 20px; flex-wrap: wrap; ">
+            <input class="input" style="padding-right: 10px; background-color: #F4CE47; flex-basis: 600px;" type="Submit" value="Save Your Book" >
         </div>
     </form>
     </div>
 
+    <div style="background-color: black;">
+        <div>
+            <div style=" display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 15px;">
+                <div><img src="logo.png" alt="logo"></div>
+                
+                <div><img src="Social media.png" alt=""></div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 15px;">
+                <div style="color: white;">Terms and conditions Privacy policy</div>
+                
+                <div style="color: white; ">+44 1332 412251 support@bbookshelf.com</div>
+            </div>
+        </div>
+        </div>
 
 
-
-    <div></div>
+   
+       
 
 </body>
+   
+         
 </html>
