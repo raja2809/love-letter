@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+
+        }
+
+        .children {}
+
+        #boss {}
+
+    </style>
+</head>
+<body>
+    <p id="banner">Hello world</p>
+    <div class="wrapper">
+        <div class="children" id="boss"></div>
+    </div>
+    <script>
+       alert("Hello")
+       var name = prompt("What is your name")
+       console.log("Hello " + name)
+
+
+
+        const element = document.getElementById("boss");
+        console.log(element);
+
+        element.innerText = name
+
+    </script>
+</body>
+</html>

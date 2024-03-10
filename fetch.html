@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  Todo List
+  <form id="queryForm">
+    <label for="query">Enter a query:</label>
+    <input type="text" id="query" name="query" required>
+    <input type="text" id="perpage" name="perpage" required>
+    <button type="button" onclick="searchImages()">Search</button>
+  </form>
+  <div id="app"></div>
+</body>
+<script>
+
+function searchImages() {
+    const query = document.getElementById('query').value;
+    const perpage = document.getElementById('perpage').value;
+
+  fetch(`https://api.pexels.com/v1/search?query=${query}&per_page=${perpage}`,{
+    headers: {
+      'Authorization': 'rSjBMmHaxBjf4ZFuWSu1Z7Lenoa2n7Xp5tZ1bIyNPUe6erWJVBpll1sP'
+    }
+  })
+    .then(response => response.json())
+    .then(body => {
+      const imageList = body.photos.map((photo) => (
+        `<img src="${photo.src.original}"/>`
+      ))
+
+      
+      return imageList
+    })
+    .then(list => {
+      document.getElementById('app').innerHTML = list
+    })
+    .catch(err => {debugger})
+
+}
+</script>
+</html>
